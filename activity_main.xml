@@ -12,27 +12,27 @@
         android:layout_width="wrap_content"
         android:layout_alignParentLeft="true"
         android:text="Score : 0"
-        android:textSize="12sp"
-        android:layout_margin="4dp"
+        android:textSize="24sp"
+        android:layout_margin="8dp"
         android:layout_alignParentStart="true" />
     <TextView
-       android:id="@+id/high"
+        android:id="@+id/high"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="High Score :"
-        android:textSize="12sp"
+        android:textSize="24sp"
         android:layout_below="@id/score"
-        android:layout_margin="4dp"
+        android:layout_margin="8dp"
         />
     <TextView
         android:id="@+id/high_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textSize="12sp"
+        android:textSize="24sp"
         android:layout_below="@id/score"
         android:layout_toRightOf="@id/high"
-        android:layout_margin="4dp"
+        android:layout_margin="8dp"
         />
     <TextView
         android:id="@+id/timer"
@@ -40,18 +40,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:text="10"
-        android:textSize="24sp"
-        android:layout_margin="8dp"
+        android:textSize="48sp"
+        android:layout_margin="16dp"
         />
     <EditText
         android:id="@+id/number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/high_score"
-        android:layout_margin="4dp"
-        android:textSize="12sp"
-        android:gravity="center"
+        android:layout_margin="8dp"
+        android:textSize="24sp"
         android:inputType="number"
+        android:gravity="center"
         android:hint="0"
         />
     <Button
@@ -60,46 +60,46 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/number"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:text="SUBMIT"
-        android:textSize="12sp"
-        />
+        android:textSize="24sp"
+        tools:ignore="InvalidId" />
     <TextView
-        android:id="@+id/text_option"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/submit"
+        android:layout_above="@id/option_1"
         android:text="Select an option"
-        android:textSize="12sp"
+        android:textSize="24sp"
         />
     <Button
         android:id="@+id/option_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_option"
-        android:layout_toLeftOf="@id/option_2"
-        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
         android:text="0"
-        android:textSize="12sp"
-        />
+        android:textSize="24sp" />
     <Button
         android:id="@+id/option_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
         android:text="0"
-        android:layout_below="@id/text_option"
-        android:textSize="12sp" />
+        android:layout_below="@id/option_1"
+        android:textSize="24sp" />
     <Button
         android:id="@+id/option_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_option"
-        android:layout_toRightOf="@id/option_2"
-        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
         android:text="0"
-        android:textSize="12sp"
-        />
+        android:layout_below="@id/option_2"
+        android:textSize="24sp" />
+
 
 </RelativeLayout>
